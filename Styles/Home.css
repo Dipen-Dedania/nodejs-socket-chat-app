@@ -1,0 +1,249 @@
+html{
+    padding-bottom:56px;
+}
+
+body {
+    font: 13px Helvetica, Arial;
+    margin:0;
+    padding:0;
+}
+
+.bg-pattern {
+  background: url("http://www.marutitech.com/wp-content/themes/marutitech-theme/assets/img/pattern.png"), #e8e8e8;
+  background-repeat: repeat;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#messages li {
+    padding: 5px 10px;
+}
+
+.footerContainer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    background-color:#fff;
+}
+.messageBoxParent{
+    display: table;
+    width:100%;
+    vertical-align:middle;
+}
+
+.messageBox{
+    display: table-cell;
+    vertical-align:bottom;
+}
+
+.mchat{
+    background:#FF9800;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 15px;
+    float: left;
+    width: 100%;
+    line-height: 40px;
+}
+
+.myBtnStyle{
+    background:#FF9800 !important;
+}
+
+.form-control:focus, .form-control.focus {
+    outline: medium none;
+    background-image: linear-gradient(#FF9800, #FF9800), linear-gradient(#D2D2D2, #D2D2D2);
+}
+
+.tabStyle{
+    background:#3D3D3D;
+    width: 50%;
+    float: left;
+    padding: 15px 0;
+    text-align:center;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom:5px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    cursor: pointer;
+}
+
+.activeTab{
+    border-bottom:5px solid #FF9800;
+}
+
+.logoContainer{
+    background:#fff;
+    float: left;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 10px;
+    margin-right: 5px;
+}
+.logo{
+    background-image:url("/Img/SpyIcon.png");
+    background-attachment:scroll;
+    background-color: transparent;
+    background-position:center center;
+    background-clip: border-box;
+    background-position: 3px 0px;
+    background-repeat:no-repeat;
+    background-size: 20px 20px;
+    background-origin: padding-box;
+    height: 20px;
+    width: 20px;
+    display:block;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userLogoStyle{
+    float: left;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 30px;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.userMessageStyle{
+    float: left;
+    padding: 5px;
+    background: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    max-width: 50%;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #fff;
+    margin-left: -12px;
+    float: left;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #fff;
+    margin-right: -12px;
+    float: right;
+}
+
+.messageContainer{
+    float: left;
+    width: 100%;
+}
+
+.userContainer{
+    float: left;
+    width: 100%;
+    line-height: 50px;
+    margin-right: 5px;
+    background: #FFF;
+    padding: 5px;
+    border-bottom: 1px solid #999;
+}
+#users li.userContainer:nth-child(odd) { background: #eee; }
+
+.userNameStyle{
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 5px;
+    float: left;
+}
+
+.userLists{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+.typingStyle{
+    position: fixed;
+    bottom: 60px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-style: italic;
+    color: #FF9800;
+    display:none;
+    width: 100%;
+    text-align: center;
+}
+
+.activeUserMsg {
+    float:right;
+    margin-right:10px;
+    margin-left:0px;
+}
+
+.stickersContainer{
+    position: fixed;
+    bottom: 55px;
+    width: 100%;
+    float: left;
+    background-color: #bdbdbd;
+    opacity:0;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    height:0;
+    overflow-Y: scroll;
+    overflow-X: hidden;
+}
+
+.stickersContainerShown {
+    height: 200px;
+    opacity:0.85;
+}
+
+.sticker{
+    max-height:20px;
+    max-width:20px;
+    cursor:pointer;
+    margin:10px;
+}
+
+.emoji{
+    max-height:50px;
+    max-width:50px;
+    cursor:pointer;
+}
+
+.stickerButton{
+    background-image:url("/Img/SmileyButton.png");
+    background-attachment:scroll;
+    background-color: transparent;
+    background-position:center center;
+    background-clip: border-box;
+    background-position: 0px 0px;
+    background-repeat:no-repeat;
+    background-size: 40px 40px;
+    background-origin: padding-box;
+    height: 45px;
+    width: 45px;
+    display:block;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+}

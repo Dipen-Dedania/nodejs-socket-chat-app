@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Spy chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1 , maximum-scale=1, user-scalable = 0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="/Img/SpyIcon.png" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//getbootstrap.com/dist/css/bootstrap.min.css" />
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/Scripts/material.js"></script>
+    <script type="text/javascript" src="/Scripts/ripples.js"></script>
+    <script type="text/javascript" src="/Scripts/Home.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/Styles/material.css" />
+    <link rel="stylesheet" type="text/css" href="/Styles/ripples.css" />
+    <link rel="stylesheet" type="text/css" href="/Styles/material-fullpalette.css" />
+    <link rel="stylesheet" type="text/css" href="/Styles/Home.css" />
+  </head>
+  <body class="bg-pattern">
+    <div class="mchat shadow-z-2">
+      <div class="logoContainer shadow-z-2"><div class="logo"></div></div>
+        Chat
+      </div>
+    <div class="">
+      <div class="tabStyle withripple activeTab">My Chats</div>
+      <div class="tabStyle withripple ">Connected Users</div>
+    </div>
+    <div id="messageContainer">
+      <ul id="messages">
+      </ul>
+    </div>
+    <div id="usersContainer" style="display:none;">
+      <ul id="users" class="userLists">
+      </ul>
+    </div>
+    <div id="typingContainer" class="typingStyle">
+        Dipen is typing..
+    </div>
+    <div id="stickers" class="stickersContainer">
+    </div>
+    <div class="footerContainer shadow-z-2">
+      <div class="messageBoxParent">
+        <div class="messageBox" style="width:50px;">
+            <div class="stickerButton">
+            </div>
+        </div>
+        <div class="messageBox">
+            <input id="messageBox" autocomplete="off" type="text" class="form-control" placeholder="Message">
+        </div>
+        <div class="messageBox" style="width:100px;">
+            <button id="sendBtn" class="messageBox btn btn-success myBtnStyle">SEND</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
